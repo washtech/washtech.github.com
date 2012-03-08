@@ -1,8 +1,35 @@
 
+.main-wrapper {
+	margin: auto;
+}
+
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
 	font-family: "Heiti TC", "Heiti SC", "Microsoft JhengHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+	font-size: 200%;
+}
+h2{
+	font-size: 175%;
+}
+h3{
+	font-size: 150%;
+}
+h4 {
+	font-size: 125%;
+}
+
+h5{
+	font-size: 110%;
+}
+
+p, span { 
+	font-size: 120%;
+	line-height: 150%;
 }
 
 a.more {
@@ -51,6 +78,10 @@ p.hero-desc{
 	padding-top: 6px;
 }
 
-
-
+thumbnail > img {
+	width: 260px;
+}
+.contact_info{
+	font-size: 14px;
+}
 
