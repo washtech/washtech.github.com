@@ -2,6 +2,7 @@
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
+	font-family: "Heiti TC", "Heiti SC", "Microsoft JhengHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a.more {
@@ -16,20 +17,40 @@ p.hero-desc{
 	background: hsla(225, 100%, 50%, 0.5);
 }
 
-#topNavBar li {
+#topNavBar a,li {
+	color: #fff;
 	font-size: 16px;
+	font-family: LiHeiPro, "Microsoft JhengHei";
+	background: background: hsla(225, 100%, 50%, 0.5);
 }
 
+#topNavBar a:hover {
+	color: hsl(55, 100%, 85%);
+}
+
+#topNavBar li{
+	padding: 0px 0px 3px 0px;
+	
+}
+
+#topNavBar li.active {
+	background: hsl(225, 100%, 60%);	
+}
 #topNavBar li.active > a{
 	background: none;
 }
 
-#topNavBar a {
-	color: #f3f3f3;
+#topNavBar a.brand {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
 }
 
-#topNavBar a.brand {
-	font-size: 20px;
-	color: #f3f3f3;
+#topNavBar form.search-bar {
+	margin: 0px 20px 7px 20px;
+	padding-top: 6px;
 }
+
+
+
 
