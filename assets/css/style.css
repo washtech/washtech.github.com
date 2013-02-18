@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #FE812D;
+    color: #fff;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+	 FontAwesome!
+   ========================================================================== */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../webfonts/fontawesome-webfont.eot');
+  src: url('../webfonts/fontawesome-webfont.eot') format('embedded-opentype'),
+    url('../webfonts/fontawesome-webfont.woff') format('woff'),
+    url('../webfonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   Social Button for Facebook and Twitter
+   ========================================================================== */
+
+.btn.social {
+  margin:5px 10px;
+  padding:5px 15px;
+  color:white; }
+
+  .btn.social.twitter {
+    color: #FFF;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#1ba7e5;
+    background-image:-moz-linear-gradient(top, #38C0FF, #00a0d1);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#38C0FF), to(#00a0d1));
+    background-image:-webkit-linear-gradient(top, #38C0FF, #00a0d1);
+    background-image:-o-linear-gradient(top, #38C0FF, #00a0d1);
+    background-image:linear-gradient(to bottom, #38C0FF,#00a0d1);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF38C0FF', endColorstr='#FF00a0d1', GradientType=0);
+    border-color:#00a0d1 #00a0d1 #005379;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25); }
+
+  .btn.social.facebook{
+    color: #FFF;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+    background-color:#5f78a8;
+    background-image:-moz-linear-gradient(top, #708EC7, #3b5998);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#708EC7), to(#3b5998));
+    background-image:-webkit-linear-gradient(top, #708EC7, #3b5998);
+    background-image:-o-linear-gradient(top, #708EC7, #3b5998);
+    background-image:linear-gradient(to bottom, #708EC7,#3b5998);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF708EC7', endColorstr='#FF3b5998', GradientType=0);
+    border-color:#3b5998 #3b5998 #2b3b59;
+    border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25); }
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+
+/* ==========================================================================
+	 Custom Styles
+   ========================================================================== */
+
+body {
+  font-size: 20px; }
+
+p {
+  font-family: "Helvetica Neue", Helvetica, "ff-cursive-han", "Hiragino Kaku Gothic", sans-serif;
+  font-weight: bold; }
+
+#brand {
+  font-size: 1.5em; }
+
+#thumbnails-list{
+  margin-left: -20px;
+
+}
+
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.3em;
+}
+h4 {
+  font-size: 1.1em;
+}
+
+.lead {
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Customers Logos
+   ========================================================================== */
+
+.customers h3 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666666;
+}
+
+img.customers-logos {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  margin: 10px auto; }
+
+  img.customers-logos:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%); }
+
+/* ==========================================================================
+   Footer Stuff
+   ========================================================================== */
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: auto;
+  background-color: #000;
+  margin-bottom: -50px;
+  color: #fff;
+}
+
+footer a {
+  color: #ffed66;
+}
+
+footer a:hover {
+  color: #fee100
+}
+
+.social-networks > a {
+  color: #fff;
+}
+
+#after-footer .row {
+  margin-left: 0px;
+}
+
+#after-footer p {
+  color: #666;
+}
+
+#contact ul {
+  margin-left: -40px;
+}
+
+#contact li {
+  letter-spacing: 2px;
+}
+
+.dirrecion {
+  line-height: 24px;
+  letter-spacing: 3px;
+}
+
+.direccion strong {
+  margin-bottom: 10px;
+}
+
+.products li {
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+#wrap {
+  margin-bottom: 50px;
+}
+
+
+/* ===================================================================== */
+
+
+footer .social-networks a{
+  display:inline-block;
+  margin:0px 10px 0 0;
+  padding:2px 0px 0px 0px;
+  font-size:20px;
+  text-align: center;
+  width:22px;
+  height:22px;
+  background:#222;
+  text-decoration:none;
+  color:#fff;
+  -webkit-transition:all .6s;
+  -moz-transition:all .6s;
+  -o-transition:all .6s;
+  -ms-transition:all .6s;
+  transition:all .6s
+}
+
+footer .social-networks .icon-facebook{
+  border:2px solid #3b5998 }
+footer .social-networks .icon-facebook:hover{
+  background:#3b5998; }
+
+footer .social-networks .icon-rss{
+  border:2px solid #ff9a07 }
+footer .social-networks .icon-rss:hover{
+  background:#ff9a07 }
+
+footer .social-networks .icon-twitter{
+  border:2px solid #31cdfd }
+footer .social-networks .icon-twitter:hover{
+  background:#31cdfd }
+
+footer .social-networks .icon-google-plus{
+  border:2px solid #c9402e }
+  footer .social-networks .icon-google-plus:hover{
+    background:#c9402e }
+
+
+/* ==========================================================================
+   Mobile Stuff
+   ========================================================================== */
+
+
+/* fix navbar collapse with content*/
+@media (max-width: 980px) {
+  body {
+    padding-top: 50px; }
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+
